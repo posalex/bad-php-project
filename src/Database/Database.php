@@ -2,11 +2,15 @@
 
 class Database
 {
+    public $hostname = '127.0.0.1';
+    public $username = 'admin';
+    public $password = 'solarwinds123';
+    public $database = 'books';
     public mysqli $connection;
 
-    public function __construct($hostname, $username, $password, $database)
+    public function __construct()
     {
-        $this->connection = mysqli_connect($hostname, $username, $password, $database);
+        $this->connection = mysqli_connect($this->hostname, $this->username, $this->password, $this->database);
     }
 
     public function query($sql)
