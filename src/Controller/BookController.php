@@ -5,7 +5,7 @@ namespace App\Controller;
 use App\Export\CSVExporter;
 use App\Export\ExcelExporter;
 use App\Export\JSONExporter;
-use Database;
+use App\Database\Database;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

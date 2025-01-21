@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Database;
+
 class Database
 {
     public $hostname = '127.0.0.1';
